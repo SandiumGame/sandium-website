@@ -1,0 +1,15 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+// Add logo to masthead
+.site-title::before {
+	content: url("images/sandium-logo.png");
+	display: inline-block;
+	position: relative;
+	width: 48px;
+	height: 48px;
+	top: 5px;
+}

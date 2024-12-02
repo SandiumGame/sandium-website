@@ -24,18 +24,24 @@ description: >- # this means to ignore newlines until "baseurl:"
   Sandium is an Open Source sandbox game featuring user-generated content.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-#github_username:  jekyll
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
 
-#header_pages:
-#  - about.md
-#  - contact.md
+header_pages:
+  - about.md
+  - contact.md
 
+minima:
+  skin: dark
+  social_links:
+    - { platform: discord, user_url: "https://discord.gg/YzybfgBADK", title: "Discord" }
+    - { platform: reddit, user_url: "https://www.reddit.com/r/Sandium/", title: "reddit" }
+    - { platform: github,  user_url: "https://github.com/SandiumGame/sandium" }
+    - { platform: youtube, user_url: "https://www.youtube.com/@SandiumGame" }
+    - { platform: rss, user_url: "/feed.xml", title: "RSS" }
 
 # Exclude from processing.
 # The following items will not be processed, by default.
